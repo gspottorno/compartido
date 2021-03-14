@@ -1,0 +1,44 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+  font-size: 120%;
+}
+
+main {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.caja_centrada {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  opacity: 0.4;
+  -moz-box-shadow: 4px 4px 10px #000000;
+  -webkit-box-shadow: 4px 4px 10px #000000;
+  box-shadow: 4px 4px 10px #000000;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+}
+.caja_hija {
+  width: 100%;
+  text-align: center;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn_notificacion {
+  background-color: #ccc;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
